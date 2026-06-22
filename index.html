@@ -4,12 +4,26 @@
 <head>
     <meta charset="utf-8" />
     <title>HTML lesson 1</title>
+    <link rel="icon" href="Boxes.ico">
+    <style>
+        h2,h4, h6  
+        {
+            text-align:center;
+            color:red;
+            font-family:'Segoe UI';
+        }
+        h4 
+        {
+            color:darkgreen;
+
+        }
+    </style>
 </head>
 <body>
     <details>
         <summary> Типы заголовков </summary>
 
-        <h1>Заголовок 1 - заголовок первого уровня может быть только один на странице!</h1>
+        <h1>Заголовок 1 - заголовок первого уровня может быть только один на странице!!!</h1>
         <h2>Заголовок 2</h2>
         <h3>Заголовок 3</h3>
         <h4>Заголовок 4</h4>
@@ -19,12 +33,28 @@
     </details>
 
     <details open>
-        <summary> Дескрипторы </summary> 
-        <b><tt>&#60;p&#62;</tt> (Paragraph)</b>     &#8211; этот дескриптор описывает абзац;<br/>
-        <b><tt>&lt;b&gt;</tt> (Bold)</b>            &ndash; <b>Делает шрифт жирным</b>;<br/>
-        <b><tt>&#60;i&#62;</tt> (Italic)</b>        &#8210; <i>Делает шрифт курсивным</i>;<br/>
-        <b><tt>&#60;u&#62;</tt> (Underline)</b>     &#8210; <u>Делает шрифт подчёркнтуым</u>;<br/>
-        <b><tt>&#60;tt&#62;</tt> (Teletype text)</b>     &#8210; <tt>Делает шрифт моноширным (каждый символ занимает одинаковую площадь на экране)</tt>;<br/>
+        <summary> Дескрипторы </summary>
+        <h2>Дескрипторы физического форматирования</h2>
+        <b><code>&#60;p&#62;</code> (Paragraph)</b>                        &#8211; этот дескриптор описывает абзац;<br />
+        <b><code>&lt;b&gt;</code> (Bold)</b>                               &ndash; <b>Делает шрифт жирным</b>;<br />
+        <b><code>&#60;i&#62;</code> (Italic)</b>                           &#8210; <i>Делает шрифт курсивным</i>;<br />
+        <b><code>&#60;u&#62;</code> (Underline)</b>                        &#8210; <u>Делает шрифт подчёркнтуым</u>;<br />
+        <b><code>&#60;tt&#62;</code> (Teletype text)</b>                   &#8210; <tt>Делает шрифт моноширным (каждый символ занимает одинаковую площадь на экране)</tt>;<br />
+        <b><code>&#60;sup&#62;</code> (Superscript)</b>                    &#8210; <tt>Верхний <sup>индекс</sup></tt>;<br />
+        <b><code>&#60;sub&#62;</code> (Subscript)</b>                      &#8210; <tt>Нижний  <sub>индекс</sub></tt>;<br />
+        <b><code>&#60;pre&#62;</code> (Preformated)</b>                    &#8210; <pre>Этот дескриптор создаёт предформатированный текст, 
+в котором сохраняются отступы 
+и переносы строк.
+Кроме того, <b>предформатированный</b> текст всегда отображается <b>моноширным</b> шрифтом.</pre>;<br />
+        <hr>
+        <h2>Дескрипторы логического форматирования</h2>
+        <strong><code>&#60;strong&#62;</code> (Bold)        </strong>      &#8211; делает шрифт <strong>жирным;</strong>; <br>
+        <strong><code>&#60;em&#62;</code> (Emphasis)        </strong>      &#8211; делает шрифт <em>курсивным;</em>;      <br>
+        <strong><code>&#60;code&#62;</code> (Mono)          </strong>      &#8211; делает шрифт <code>моноширным;</code>; <br>
+        <strong><code>&#60;abbr&#62;</code> (Abbreviation)  </strong>      &#8211; Этим дескриптором желательно выделять  <abbr>аббревиатуры</abbr>; <br>
+        <strong><code>&#60;cite&#62;</code> (Citation)      </strong>      &#8211; Этим дескриптором желательно выделять  <cite>цитаты</cite>; <br>
     </details>
+    <hr>
+    <h2>CSS - Cascade Style Sheet</h2>
 </body>
 </html>
