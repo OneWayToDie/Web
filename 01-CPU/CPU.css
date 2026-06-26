@@ -8,8 +8,13 @@ p
 {
     text-align:justify;
 }
-figure {
+figure 
+{
     text-align: center;
     font-style:italic;
     font-weight:100;
+}
+ul
+{
+    list-style:none;
 }
