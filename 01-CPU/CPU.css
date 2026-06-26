@@ -3,11 +3,17 @@ body
 {
     font-family:'Roboto Condensed';
     font-size:20px;
+    padding:2% 5%;
 }
 p 
 {
     text-align:justify;
+    text-indent:48px;
 }
+    p::first-letter
+    {
+        font-size:32px;
+    }
 figure 
 {
     text-align: center;
@@ -17,4 +23,22 @@ figure
 ul
 {
     list-style:none;
+}
+a
+{
+    text-decoration:none;
+}
+a:hover
+{
+    font-weight:800;
+    /*background-color:lightblue;*/
+    color:red;
+}
+a:active
+{
+    color:green;
+}
+a:visited
+{
+    color:darkgreen;
 }
