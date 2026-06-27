@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
-body 
+body
 {
     font-family:'Roboto Condensed';
     font-size:20px;
-    padding:2% 5%;
+    padding:2% 3%;
 }
 p 
 {
@@ -41,4 +41,36 @@ a:active
 a:visited
 {
     color:darkgreen;
+}
+table
+{
+    width:100%;
+    border-collapse:collapse;
+    margin:1em 0;
+    font-size:16px;
+    table-layout:auto;
+}
+th, td
+{
+    padding:10px 14px;
+    border-bottom:1px solid #bbb;
+}
+th
+{
+    font-weight:700;
+    border-bottom:2px solid #999;
+}
+.tc
+{
+    text-align:center;
+}
+td[colspan]
+{
+    border-bottom:none;
+    font-style:italic;
+    padding-top:14px;
+}
+td:empty::before
+{
+    content:'\00a0';
 }
