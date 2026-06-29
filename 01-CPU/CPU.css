@@ -31,7 +31,7 @@ a
 a:hover
 {
     font-weight:800;
-    /*background-color:lightblue;*/
+    background-color:lightblue;
     color:red;
 }
 a:active
@@ -41,4 +41,8 @@ a:active
 a:visited
 {
     color:darkgreen;
+}
+h2:target > span
+{
+    background-color:limegreen;
 }
