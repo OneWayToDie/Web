@@ -42,7 +42,17 @@ a:visited
 {
     color:darkgreen;
 }
-h2:target > span
+:target
 {
     background-color:limegreen;
+}
+    :target ~ div
+    {
+        /*background-color:#ABABAB;*/
+        border-radius: 15px;
+        box-shadow: 0 0 25px 25px lightgray;
+    }
+div 
+{
+    padding: 16px;
 }
