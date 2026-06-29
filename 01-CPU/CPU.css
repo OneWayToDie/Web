@@ -1,108 +1,143 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
 body
 {
-    font-family:'Roboto Condensed';
-    font-size:20px;
-    padding:2% 3%;
+    font-family:'Roboto Condensed'; /* Установка семейства шрифта на Roboto Condensed */
+    font-size:20px;                 /* Базовый размер шрифта — 20 пикселей */
+    padding:2% 3%;                  /* Внутренний отступ: 2% сверху/снизу, 3% слева/справа */
 }
-p 
+
+p
 {
-    text-align:justify;
-    text-indent:48px;
+    text-align:justify; /* Выравнивание текста по ширине (по обоим краям) */
+    text-indent:48px;   /* Отступ первой строки каждого абзаца — 48 пикселей */
 }
+
     p::first-letter
     {
-        font-size:24px;
+        font-size:24px; 
     }
-figure 
+
+figure
 {
-    text-align: center;
-    font-style:italic;
-    font-weight:100;
+    text-align: center; /* Центрирование содержимого figure по горизонтали */
+    font-style:italic;  /* Текст внутри figure — курсивный (подпись к иллюстрации) */
+    font-weight:100;    /* Тонкое начертание (минимальная толщина шрифта) */
 }
+
+/* Стиль для неупорядоченных списков */
 ul
 {
-    list-style:none;
+    list-style:none; /* Убирает маркеры (точки/кружки) у пунктов списка */
 }
+
+/* Стиль для всех ссылок */
 a
 {
-    text-decoration:none;
+    text-decoration:none; /* Убирает подчёркивание у ссылок */
 }
+
 a:hover
 {
-    font-weight:800;
-    /*background-color:lightblue;*/
-    color:red;
+    font-weight:800; /* Жирное начертание при наведении */
+    color:red;       /* Цвет текста ссылки становится красным при наведении */
 }
+
+/* Состояние ссылки в момент клика (кнопка мыши нажата) */
 a:active
 {
-    color:green;
+    color:green; /* Цвет текста — зелёный во время клика */
 }
+
+/* Состояние посещённой ссылки */
 a:visited
 {
-    color:darkgreen;
+    color:darkgreen; /* Цвет текста — тёмно-зелёный для уже открытых ссылок */
 }
+
 /* ========== Хедер и навигация ========== */
+
+/* Стиль для элемента <header> — верхняя панель сайта */
 header
 {
-    background:#333;
-    padding:10px 3%;
+    background:#333;       /* Тёмно-серый фон заголовка */
+    padding:10px 3%;       /* Внутренние отступы: 10px сверху/снизу, 3% слева/справа */
 }
+
+/* Стиль для логотипа внутри шапки (класс .logo) */
 header .logo
 {
-    color:#fff;
-    font-weight:700;
-    font-size:18px;
-    text-decoration:none;
+    color:#fff;            /* Белый цвет текста логотипа */
+    font-weight:700;       /* Полужирное начертание */
+    font-size:18px;        /* Размер шрифта логотипа — 18 пикселей */
+    text-decoration:none;  /* Без подчёркивания */
 }
+
+/* Стиль для блока навигации <nav> */
 nav
 {
-    display:inline-block;
-    margin-left:30px;
+    display:inline-block; /* Nav отображается как строчно-блочный элемент (рядом с логотипом) */
+    margin-left:30px;     /* Отступ слева 30px — отделяет навигацию от логотипа */
 }
+
+/* Стиль для ссылок внутри навигации */
 nav a
 {
-    color:#ccc;
-    text-decoration:none;
-    margin:0 12px;
-    font-size:15px;
+    color:#ccc;           /* Светло-серый цвет текста ссылок */
+    text-decoration:none; /* Без подчёркивания */
+    margin:0 12px;        /* Горизонтальные отступы 12px между ссылками */
+    font-size:15px;       /* Меньший размер шрифта — 15 пикселей */
 }
+
+/* Состояние наведения на ссылку в навигации */
 nav a:hover
 {
-    color:#fff;
-    font-weight:400;
+    color:#fff;        /* При наведении текст становится белым */
+    font-weight:400;   /* Обычное начертание (не жирное) */
 }
-/* ====================================== */
-/* ========== Таблица процессоров ======= */
+
+
+
+/* Стиль для таблицы с данными о процессорах */
 table
 {
-    width:100%;
-    border-collapse:collapse;
-    margin:1em 0;
-    font-size:16px;
-    table-layout:auto;
+    width:100%;              /* Таблица занимает 100% ширины родителя */
+    border-collapse:collapse; /* Границы ячеек сливаются в одну линию (без двойных) */
+    margin:1em 0;            /* Внешние отступы: 1em сверху/снизу, 0 слева/справа */
+    font-size:16px;          /* Размер шрифта внутри таблицы — 16 пикселей */
+    table-layout:auto;       /* Ширина столбцов определяется содержимым (автоматически) */
 }
+
+/* Общий стиль для заголовков и ячеек таблицы */
 th, td
 {
-    padding:10px 14px;
-    border-bottom:1px solid #bbb;
+    padding:10px 14px;               /* Внутренние отступы: 10px сверху/снизу, 14px слева/справа */
+    border-bottom:1px solid #bbb;    /* Нижняя граница ячеек — тонкая серая линия */
 }
+
+/* Стиль только для заголовков таблицы */
 th
 {
-    font-weight:700;
-    border-bottom:2px solid #999;
+    font-weight:700;            /* Жирный текст в заголовках */
+    border-bottom:2px solid #999; /* Нижняя граница заголовков толще и темнее */
 }
+
+/* Класс .tc — центрирование содержимого ячейки */
 .tc
 {
-    text-align:center;
+    text-align:center; /* Выравнивание текста по центру */
 }
+
+/* Ячейки с атрибутом colspan (объединённые столбцы) */
 td[colspan]
 {
-    border-bottom:none;
-    font-style:italic;
-    padding-top:14px;
+    border-bottom:none;   /* Убирает нижнюю границу у строк-разделителей */
+    font-style:italic;    /* Курсивное начертание (для подписей/разделов) */
+    padding-top:14px;     /* Дополнительный отступ сверху — визуальный разделитель */
 }
+
+/* Псевдоэлемент для пустых ячеек — вставляет неразрывный пробел */
 td:empty::before
 {
-    content:'\00a0';
+    content:'\00a0'; /* Unicode-символ неразрывного пробела, чтобы пустая ячейка имела высоту */
 }

@@ -170,23 +170,24 @@
     <p>Для чего предназначены дополнительные наборы команд? В первую очередь — для увеличения быстродействия при выполнении наиболее частых операций. Одна команда из дополнительного набора, как правило, выполняет действие, для которого понадобилась бы небольшая процедура, состоящая из команд основного набора, причём специальная команда выполняется процессором быстрее, чем заменяющая её последовательность. Однако в 99% случаев ничего такого, чего нельзя было бы сделать с помощью основных команд, команды из дополнительного набора также не делают. Таким образом, упомянутая выше программная проверка поддержки дополнительных наборов команд процессором должна выполнять очень простую функцию: если, например, процессор поддерживает SSE — значит, считать будем быстро и с помощью команд из набора SSE. Если нет — будем считать медленнее, с помощью команд из основного набора. Корректно написанная программа обязана действовать именно так. Впрочем, сейчас практически никто не проверяет у процессора наличие поддержки MMX, т.к. все CPU, вышедшие за последние 10 лет, этот набор поддерживают гарантированно. Для справки приведём табличку, на которой обобщена информация о поддержке различных расширенных наборов команд различными десктопными (предназначенными для настольных ПК) и некоторыми мобильными процессорами.</p>
     <table>
         <colgroup>
-            <col style="width:28%">
-            <col style="width:12%">
-            <col style="width:10%">
-            <col style="width:10%">
-            <col style="width:10%">
-            <col style="width:15%">
-            <col style="width:15%">
+            <col style="width:28%">   
+            <col style="width:12%">   
+            <col style="width:10%">   
+            <col style="width:10%">   
+            <col style="width:10%">   
+            <col style="width:15%">   
+            <col style="width:15%">   
         </colgroup>
+
         <thead>
             <tr>
-                <th style="border-bottom:2px solid #999">Процессор</th>
-                <th style="text-align:center;border-bottom:2px solid #999">Год выпуска</th>
-                <th style="text-align:center;border-bottom:2px solid #999">x86-64</th>
-                <th style="text-align:center;border-bottom:2px solid #999">PPro</th>
-                <th style="text-align:center;border-bottom:2px solid #999">MMX</th>
-                <th style="text-align:center;border-bottom:2px solid #999">Версия SSE</th>
-                <th style="text-align:center;border-bottom:2px solid #999">3DNow!</th>
+                <th style="border-bottom:2px solid #999">Процессор</th>      
+                <th style="text-align:center;border-bottom:2px solid #999">Год выпуска</th>  
+                <th style="text-align:center;border-bottom:2px solid #999">x86-64</th>       
+                <th style="text-align:center;border-bottom:2px solid #999">PPro</th>         
+                <th style="text-align:center;border-bottom:2px solid #999">MMX</th>          
+                <th style="text-align:center;border-bottom:2px solid #999">Версия SSE</th>   
+                <th style="text-align:center;border-bottom:2px solid #999">3DNow!</th>       
             </tr>
         </thead>
         <tbody>
