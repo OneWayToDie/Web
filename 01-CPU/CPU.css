@@ -42,6 +42,38 @@ a:visited
 {
     color:darkgreen;
 }
+/* ========== Хедер и навигация ========== */
+header
+{
+    background:#333;
+    padding:10px 3%;
+}
+header .logo
+{
+    color:#fff;
+    font-weight:700;
+    font-size:18px;
+    text-decoration:none;
+}
+nav
+{
+    display:inline-block;
+    margin-left:30px;
+}
+nav a
+{
+    color:#ccc;
+    text-decoration:none;
+    margin:0 12px;
+    font-size:15px;
+}
+nav a:hover
+{
+    color:#fff;
+    font-weight:400;
+}
+/* ====================================== */
+/* ========== Таблица процессоров ======= */
 table
 {
     width:100%;
