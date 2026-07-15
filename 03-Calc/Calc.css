@@ -251,3 +251,22 @@ input:focus-visible
 {
     color:red;
 }
+
+.calc-buttons button 
+{
+    box-shadow:inset 0px -2px 3px 0px #DDDDDD;
+    border: solid 1px darkblue;
+    border-radius:5px;
+}
+
+    .calc-buttons button:hover 
+    {
+        /*background-color:#E5E5E5;*/
+        box-shadow:inset 0px -1px 5px 0px orange;
+        /*box-shadow:inset 0px -1px 5px 0px #FFAA00;*/
+    }
+    .calc-buttons button:active 
+    {
+        background-color:lightgray;
+        box-shadow: inset 0px -1px 5px 0px #EEEEEE;
+    }
