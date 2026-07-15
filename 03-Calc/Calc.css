@@ -216,16 +216,16 @@ input:focus-visible
 
 .square 
 {
-    border: solid 1px;
-    width: 32px;
-    height: 32px;
+    border: inset 2px;
+    width: 30px;
+    height: 30px;
 }
 
 .calc-buttons button 
 {
     width: 40px;
     height: 32px;
-    
+    color:darkblue;
 }
 
 .clear-buttons 
@@ -237,11 +237,17 @@ input:focus-visible
 }
     .clear-buttons > button 
     {
-        width: 70px;
-        
+        width:  70px;
+        height: 32px;
     }
 
 .menu-bar button, .calc-buttons button
 {
     font-size: 11px;
+}
+/*/////////////////////////////////////////////////////////////*/
+
+.calc-buttons > .memory-button, .calc-buttons > .operation-button, .clear-buttons > button 
+{
+    color:red;
 }
