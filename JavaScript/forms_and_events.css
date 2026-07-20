@@ -27,3 +27,7 @@ label
 {
     width:50%;
 }
+#factorial-result 
+{
+    overflow:scroll;
+}
