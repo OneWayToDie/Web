@@ -41,17 +41,25 @@ function setForegroundColor()
 
 function setColor(event)
 {
-    //  == - сравнение двух значений;
-    //  === - сравнение двух значений и типов этих значений;
-    //  === - возвращает true только в том случае, если совпадают как значения, так и типы;
-    if (event.target.id === 'background-color')
-    {
-        document.body.style.backgroundColor = event.target.value;
-    }
-    else
-    {
-        document.body.style.color = event.target.value;
-    }
+    ////  == - сравнение двух значений;
+    ////  === - сравнение двух значений и типов этих значений;
+    ////  === - возвращает true только в том случае, если совпадают как значения, так и типы;
+    //--------------------------------------
+
+    document.body.style[(event.target.id === 'background-color' ? 'backgroundColor' : 'color')] = event.target.value;
+
+    //(event.target.id === 'background-color' ?
+    //    document.body.style.backgroundColor :
+    //    document.body.style.color) = event.target.value;
+
+    //if (event.target.id === 'background-color')
+    //{
+    //    document.body.style.backgroundColor = event.target.value;
+    //}
+    //else
+    //{
+    //    document.body.style.color = event.target.value;
+    //}
     console.log(event.target.id);
-    //alert(setColor);
+    ////alert(setColor);
 }
