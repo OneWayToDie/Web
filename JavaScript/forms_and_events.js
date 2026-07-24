@@ -76,10 +76,12 @@ function traceMouse(e)
 document.getElementById("switch-background").addEventListener("click", switchBackground);
 function switchBackground(e)
 {
-    let skin = document.body.className;
-    let switchButon = document.getElementById("switch-background"); 
-    switchButon.src = skin === "dark" ? "moon.png" : "sun.png";
-    document.body.className = skin === "dark" ? "light" : "dark";
-    /*document.getElementById("debug-background").innerHTML = switchButon.src;*/
-    document.getElementById("debug-background").innerHTML = document.body.className;
+    document.body.className = document.body.className === "dark" ? "light" : "dark";
+
+    //let skin = document.body.className;
+    //let switchButon = document.getElementById("switch-background"); 
+    //switchButon.src = skin === "dark" ? "moon.png" : "sun.png";
+    //document.body.className = skin === "dark" ? "light" : "dark";
+    ///*document.getElementById("debug-background").innerHTML = switchButon.src;*/
+    //document.getElementById("debug-background").innerHTML = document.body.className;
 }
