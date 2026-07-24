@@ -39,6 +39,8 @@ function setForegroundColor()
     document.body.style.color = document.getElementById("foreground-color").value;
 }
 
+//let colors = document.getElementById("foreground-color");
+//colors.addEventListener
 function setColor(event)
 {
     ////  == - сравнение двух значений;
@@ -62,4 +64,22 @@ function setColor(event)
     //}
     console.log(event.target.id);
     ////alert(setColor);
+}
+
+document.addEventListener("mousemove", traceMouse);
+function traceMouse(e)
+{
+    document.getElementById("mouse").innerHTML =
+        `X = ${e.clientX}, Y = ${e.clientY}`;
+}
+
+document.getElementById("switch-background").addEventListener("click", switchBackground);
+function switchBackground(e)
+{
+    let skin = document.body.className;
+    let switchButon = document.getElementById("switch-background"); 
+    switchButon.src = skin === "dark" ? "moon.png" : "sun.png";
+    document.body.className = skin === "dark" ? "light" : "dark";
+    /*document.getElementById("debug-background").innerHTML = switchButon.src;*/
+    document.getElementById("debug-background").innerHTML = document.body.className;
 }

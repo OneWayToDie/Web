@@ -6,49 +6,61 @@
     <link rel="stylesheet" href="forms_and_events.css"/>
     <title>Формы и события</title>
 </head>
-<body>
-    <h1>Формы и события</h1>
-    <details>
-        <h3>Простейшие задачи</h3>
-        <h2>Factorial</h2>
-        <div class="task">
-            <!--<div class="pair">
-            </div>-->
-            <label for="number">Введите целое число от 0 до 170:</label>
-            <input id="number" type="number" onchange="Factorial()" />
-            <button onclick="Factorial()">Вычислить</button>
+    <body class="dark">
+    
+        <div class="header">
+            <div>Header</div>
+            <div id="mouse"></div>
+            <div id="debug-background"></div>
+            <img src="moon.png" id="switch-background"/>
         </div>
-        <div id="factorial-result" class="result"></div>
-        <!--<input id="factorial-result" class="result" type="text"/>-->
         <hr>
-        <h2>Power</h2>
-        <div class="task">
-            <!--<input id="base" type="number"/>-->
-        </div>
-    </details>
-
-    <div class="images-and-colors">
-        <div class="upload-image">
-            <div class="image-container">
-                <img alt="Фото студента" id="image">
+        <!-- ----------------------------------------------------------------------------------------------- -->
+        <h1>Формы и события</h1>
+    
+        <!-- ----------------------------------------------------------------------------------------------- -->
+    
+        <details>
+            <h3>Простейшие задачи</h3>
+            <h2>Factorial</h2>
+            <div class="task">
+                <!--<div class="pair">
+                </div>-->
+                <label for="number">Введите целое число от 0 до 170:</label>
+                <input id="number" type="number" onchange="Factorial()" />
+                <button onclick="Factorial()">Вычислить</button>
             </div>
-            <input type="file" id="image-file" onchange="setImage()">
-        </div>
-
-        <div class="colors">
-            <div class="select-color">
-                <label for="background-color">Цвет фона</label>
-                <input type="color" id="background-color" value="white" 
-                  oninput="setColor(event)">
+            <div id="factorial-result" class="result"></div>
+            <!--<input id="factorial-result" class="result" type="text"/>-->
+            <hr>
+            <h2>Power</h2>
+            <div class="task">
+                <!--<input id="base" type="number"/>-->
             </div>
-            <div class="select-color">
-                <label for="foreground-color">Цвет текста</label>
-                <input type="color" id="foreground-color" value="black"
-                       oninput="setColor(event)">
+        </details>
+    
+        <div class="images-and-colors">
+            <div class="upload-image">
+                <div class="image-container">
+                    <img alt="Фото студента" id="image">
+                </div>
+                <input type="file" id="image-file" onchange="setImage()">
             </div>
+    
+            <div class="colors">
+                <div class="select-color">
+                    <label for="background-color">Цвет фона</label>
+                    <input type="color" id="background-color" value="white" 
+                      oninput="setColor(event)">
+                </div>
+                <div class="select-color">
+                    <label for="foreground-color">Цвет текста</label>
+                    <input type="color" id="foreground-color" value="black"
+                           oninput="setColor(event)">
+                </div>
+            </div>
+    
         </div>
-
-    </div>
-    <script src="forms_and_events.js"></script>
-</body>
+        <script src="forms_and_events.js"></script>
+    </body>
 </html>
