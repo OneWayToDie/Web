@@ -1,45 +1,54 @@
-﻿<!DOCTYPE html>
+﻿﻿
+<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="forms_and_events.css"/>
+    <link rel="stylesheet" href="forms_and_events.css">
     <title>Формы и события</title>
 </head>
-    <body class="dark">
-    
-        <div class="header">
-            <div>Header</div>
-            <div id="mouse"></div>
+<!--<body onmousemove="traceMouse(event)">-->
+<body class="dark">
+
+    <div class="header">
+        <div>Header</div>
+        <div id="mouse"></div>
+        <div id="switch-background-container">
             <div id="debug-background"></div>
-            <!--<img src="moon.png" id="switch-background"/>-->
+            <div>
+                <label for="delay">Delay:</label>
+                <input type="number" min="1" max="8" value="3" id="switch-background-delay">
+            </div>
+            <!--<img src="moon.png" id="switch-background">-->
             <div id="switch-background"></div>
         </div>
+    </div>
+    <hr>
+    <!-- ---------------------------------------------------------------- -->
+    <h1>Формы и события</h1>
+
+    <details>
+        <summary>Простейшие задачи</summary>
+        <h2>Factorial</h2>
+        <div class="task">
+            <!--<div class="pair">
+            </div>-->
+            <label for="number">Введите целое число от 0 до 170:</label>
+            <input id="number" type="number" min="0" onchange="Factorial()">
+            <button onclick="Factorial()">Вычислить</button>
+        </div>
+        <div id="factorial-result" class="result"></div>
+        <!--<input id="factorial-result" class="result" type="text">-->
         <hr>
-        <!-- ----------------------------------------------------------------------------------------------- -->
-        <h1>Формы и события</h1>
-    
-        <!-- ----------------------------------------------------------------------------------------------- -->
-    
-        <details>
-            <h3>Простейшие задачи</h3>
-            <h2>Factorial</h2>
-            <div class="task">
-                <!--<div class="pair">
-                </div>-->
-                <label for="number">Введите целое число от 0 до 170:</label>
-                <input id="number" type="number" onchange="Factorial()" />
-                <button onclick="Factorial()">Вычислить</button>
-            </div>
-            <div id="factorial-result" class="result"></div>
-            <!--<input id="factorial-result" class="result" type="text"/>-->
-            <hr>
-            <h2>Power</h2>
-            <div class="task">
-                <!--<input id="base" type="number"/>-->
-            </div>
-        </details>
-    
+        <h2>Power</h2>
+        <div class="task">
+        </div>
+    </details>
+
+    <!-- ---------------------------------------------------------------- -->
+
+    <details>
+        <summary>Фото и цвета</summary>
         <div class="images-and-colors">
             <div class="upload-image">
                 <div class="image-container">
@@ -47,21 +56,38 @@
                 </div>
                 <input type="file" id="image-file" onchange="setImage()">
             </div>
-    
+
             <div class="colors">
                 <div class="select-color">
                     <label for="background-color">Цвет фона</label>
-                    <input type="color" id="background-color" value="white" 
-                      oninput="setColor(event)">
+                    <input type="color" id="background-color" value="white" oninput='setColor(event)'>
                 </div>
                 <div class="select-color">
                     <label for="foreground-color">Цвет текста</label>
-                    <input type="color" id="foreground-color" value="black"
-                           oninput="setColor(event)">
+                    <input type="color" id="foreground-color">
                 </div>
             </div>
-    
         </div>
-        <script src="forms_and_events.js"></script>
-    </body>
+    </details>
+
+    <!-- ---------------------------------------------------------------- -->
+
+    <h2 id="raw-date"></h2>
+    <div id="clock">
+        <h2>Time</h2>
+        <div id="current-time">
+            <span id="hours"></span> :
+            <span id="minutes"></span> :
+            <span id="seconds"></span>
+        </div>
+        <div id="current-date">
+            <span id="years"></span> .
+            <span id="months"></span> .
+            <span id="days"></span>
+        </div>
+        <div id="day-of-week"></div>
+    </div>
+
+    <script src="forms_and_events.js"></script>
+</body>
 </html>
