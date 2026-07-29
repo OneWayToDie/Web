@@ -60,11 +60,11 @@
 
 /* /////////////////////////////////////////////////// */
 
-input, div, button
+/*input, div, button
 {
 	font-size: 24px;
 	width: 50%;
-}
+}*/
 
 input
 {
@@ -130,11 +130,16 @@ label
 
 /* /////////////////////////////////////////////////////////////////////////// */
 
-#clock, #clock div
+#clock/*, #clock div*/
 {
 	font-family: 'Digital-7 Mono';
 	width:98%;
 	font-size:48px;
 	text-align:center;
 }
+	#clock-controls
+	{
+		font-size:22px;
+		align-self:center;
+	}
 
